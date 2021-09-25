@@ -1,0 +1,23 @@
+
+img {
+    width: 40%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: black;
+}
+.row {
+    margin: 2% 10% 5% !important;
+}
+.featurette-divider {
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+footer {
+    position: relative;
+    top: 80%;
+    padding: 2px 30px 2px !important;
+}
