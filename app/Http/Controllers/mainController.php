@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class mainController extends Controller
 {
@@ -15,22 +16,23 @@ class mainController extends Controller
     }
 
     public function product(){
-        return view ('product');
+        $post = DB::table('detail_product')->get();
+        return view('product', compact('post'));
     }
 
-    public function baloon(){
-        return view('product.baloon');
-    }
+    // public function baloon(){
+    //     return view('product.baloon');
+    // }
 
-    public function abstract(){
-        return view('product.abstract');
-    }
+    // public function abstract(){
+    //     return view('product.abstract');
+    // }
 
-    public function loose(){
-        return view('product.loose');
-    }
+    // public function loose(){
+    //     return view('product.loose');
+    // }
 
-    public function pocket(){
-        return view('product.pocket');
-    }
+    // public function pocket(){
+    //     return view('product.pocket');
+    // }
 }
